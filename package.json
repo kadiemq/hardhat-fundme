@@ -1,0 +1,23 @@
+{
+    "name": "hardhat-fundme",
+    "author": "Kadhim Alqazzaz",
+    "version": "1.0.0",
+    "dependencies": {
+        "@chainlink/contracts": "^0.4.1",
+        "hardhat": "^2.11.2",
+        "hardhat-deploy": "^0.11.15"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+        "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13",
+        "ethers": "^5.7.1"
+    },
+    "scripts": {
+        "test": "npx hardhat test",
+        "test:staging": "npx hardhat test --network goerli",
+        "compile": "npx hardhat compile",
+        "deploy": "npx hardhat deploy",
+        "fund": "npx hardhat run scripts/fund.ts",
+        "withdraw": "npx hardhat run scripts/withdraw.ts"
+    }
+}
